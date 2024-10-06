@@ -1,5 +1,11 @@
 # Vitron
 
+
+
+https://github.com/user-attachments/assets/737a68b7-d57e-455b-bead-392e6748a1ca
+
+
+
 I have created an application that allows users to input their medical routines in an unorganized paragraph format. Once the user submits the text by clicking a button, the application processes the input and generates an organized image of the medical routine in PNG format. If the user is signed up or signed in, this image is saved in their history. Users also have the option to share the image via a link that can be easily copied from the app. For users who are not signed in, the image will be automatically deleted by a cron job after 24 hours.
 
 # Workflow
