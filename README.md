@@ -1,10 +1,59 @@
+# MediCure - Your Personal Health Companion
+
+## Setup Instructions
+
+### Flask Server Setup
+
+1. Navigate to the flask-server directory:
+
+   ```bash
+   cd flask-server
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+3. Create environment file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Edit `.env` file and add your Gemini API key:
+
+   ```
+   GEMINI_API_KEY=your_actual_api_key_here
+   ```
+
+5. Run the Flask server:
+   ```bash
+   python app.py
+   ```
+
+### Flutter App Setup
+
+1. Install Flutter dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+2. Run the app:
+   ```bash
+   flutter run
+   ```
+
+## Important Security Notes
+
+- Never commit `.env` files to version control
+- Keep your API keys secure
+
 # Vitron
 
-
-
 https://github.com/user-attachments/assets/737a68b7-d57e-455b-bead-392e6748a1ca
-
-
 
 I have created an application that allows users to input their medical routines in an unorganized paragraph format. Once the user submits the text by clicking a button, the application processes the input and generates an organized image of the medical routine in PNG format. If the user is signed up or signed in, this image is saved in their history. Users also have the option to share the image via a link that can be easily copied from the app. For users who are not signed in, the image will be automatically deleted by a cron job after 24 hours.
 
@@ -30,6 +79,7 @@ Before you begin, ensure you have the following installed on your system:
 1. **Install MongoDB**: Follow the instructions in the MongoDB installation guide above to set up MongoDB on your machine.
 
 2. **Start MongoDB Service**:
+
    ```bash
    mongod
    ```
@@ -45,35 +95,41 @@ Before you begin, ensure you have the following installed on your system:
      ```
    - Create the collections "users" and "history":
      ```javascript
-     db.createCollection("users")
-     db.createCollection("history")
+     db.createCollection("users");
+     db.createCollection("history");
      ```
 
 ## Setting Up Flask Server
 
 1. **Navigate to Flask Server Directory**:
+
    ```bash
    cd flask-server
    ```
 
 2. **Install Required Python Packages**:
    Make sure you have a `requirements.txt` file in the `flask-server` directory. If not, create one with the necessary libraries. Example:
+
    ```
    Flask==2.0.1
    pymongo==3.11.4
    schedule==1.1.0
    ```
+
    Install the requirements:
+
    ```bash
    pip install -r requirements.txt
    ```
 
 3. **Add ChromeDriver**:
+
    - Download the appropriate ChromeDriver for your Chrome version from [ChromeDriver Downloads](https://chromedriver.chromium.org/downloads).
    - Place the `chromedriver` executable in the `flask-server` directory.
 
 4. **Run the Flask App**:
    Start the Flask server:
+
    ```bash
    python app.py
    ```
@@ -99,6 +155,7 @@ Before you begin, ensure you have the following installed on your system:
 ## Running Flutter App
 
 1. **Navigate to Flutter Project Directory**:
+
    ```bash
    cd /path/to/your/flutter/project
    ```
@@ -115,10 +172,10 @@ You have successfully set up the development environment for your project with F
 
 For any issues or queries, feel free to refer to the documentation of the respective technologies or ask for help!
 
-
 # Languages and Tools:
 
 <p align="left"> <a href="https://dart.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/dartlang/dartlang-icon.svg" alt="dart" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://flutter.dev" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg" alt="flutter" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> </p>
 
 # Developer
-*   [Abhineet Raj](https://github.com/abhineetraj1)
+
+- [Abhineet Raj](https://github.com/abhineetraj1)
