@@ -287,7 +287,10 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## Developers
 
 - [Abhineet Raj](https://github.com/abhineetraj1)
-- [Agniva](https://github.com/AgnivaMaiti)
+- [Agniva Maiti](https://github.com/AgnivaMaiti)
+- [Jagan Kumar Hotta](https://github.com/techySPHINX))
+- [Tanay Changoiwala](https://github.com/)
+
 
 ## Acknowledgments
 
